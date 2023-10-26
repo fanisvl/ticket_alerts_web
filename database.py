@@ -12,8 +12,6 @@ db = mysql.connector.connect(
 
 cursor = db.cursor(buffered=True, dictionary=True)
 
-cursor.execute("SELECT * FROM upcoming_movies")
-
 def get_upcoming():
     cursor.execute("SELECT * FROM upcoming_movies")
     return cursor.fetchall()
