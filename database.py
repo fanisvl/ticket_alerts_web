@@ -15,3 +15,7 @@ cursor = db.cursor(buffered=True, dictionary=True)
 def get_upcoming():
     cursor.execute("SELECT * FROM upcoming_movies")
     return cursor.fetchall()
+
+def get_movie(id):
+    cursor.execute(f"SELECT * FROM upcoming_movies WHERE id={id}")
+    return cursor.fetchone()

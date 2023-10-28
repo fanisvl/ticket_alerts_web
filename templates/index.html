@@ -12,10 +12,13 @@
     <div class="subtitle">Select a movie to be notified the minute tickets are available.</div>
     <div class="movie-container">
         {% for movie in movies %}
-            <div class="movie-card">
-                <img src="{{ movie['poster'] }}" class="poster" alt="{{ movie['title'] }} Poster">
-                <div class="title">{{ movie['title'].title() }}</div>
-            </div>
+            <a href="/movie/{{movie['id']}}">
+                <div class="movie-card">
+                    <img src="{{ movie['poster'] }}" class="poster" alt="{{ movie['title'] }} Poster">
+                    <div class="title">{{ movie['title'].title() }}</div>
+                </div>
+            </a>
+
         {% endfor %}
     </div>
 </body>
