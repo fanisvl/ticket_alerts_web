@@ -7,7 +7,8 @@
 </head>
 <body>
     {% for movie in movies %}
-        {% include "movie_card.html" %}
+        <h1>{{movie['title']}}</h1>
+        <img src="{{ movie['poster'] }}"></img>
     {% endfor %}
 </body>
 </html>
