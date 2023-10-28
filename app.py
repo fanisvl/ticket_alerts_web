@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    upcoming_movies = upcoming()
+    upcoming_movies = get_upcoming()
     return render_template("index.html", movies=upcoming_movies)
 
 
