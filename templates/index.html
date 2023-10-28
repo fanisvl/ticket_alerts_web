@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <title>Ticket Alerts</title>
 </head>
 <body>
-    {% for movie in movies %}
-        <h1>{{movie['title']}}</h1>
-        <img src="{{ movie['poster'] }}"></img>
-    {% endfor %}
+    <div class="header">Upcoming movies</div>
+    <div class="movie-container">
+        {% for movie in movies %}
+            <div class="movie-card">
+                <img src="{{ movie['poster'] }}" class="poster" alt="{{ movie['title'] }} Poster">
+                <div class="title">{{ movie['title'].title() }}</div>
+            </div>
+        {% endfor %}
+    </div>
 </body>
 </html>
