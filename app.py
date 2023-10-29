@@ -24,6 +24,6 @@ def upcoming():
 @app.route('/create_alert', methods=['POST'])
 def create_alert():
     email = request.form.get('email')
-    movie_id = request.form.get('movie_id')
-    post_alert(email, movie_id)    
-    return render_template("alert_success", movie_id=movie_id, email=email)
+    movie_data = request.form.get('movie_data')
+    post_alert(email, movie_data['id'])
+    return render_template("alert_success", movie_data=movie_data, email=email)
