@@ -12,13 +12,14 @@
     <div class="container">
         <iframe class='trailer' src="{{movie_data['trailer']}}" frameborder="0" modestbranding></iframe>
         <div class="info-container">
-            <div class="header"> {{ movie_data['title'].title()}}</div>
-            <form action="/alert_created" method="post">
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" required>
-                <input type="hidden" name="movie_data" value=" {{ movie_data }}">
-                <input type="submit" value="Submit">
-            </form>
+            <div class="info-container-top">
+                <div class="header"> {{ movie_data['title'].title()}}</div>
+                <form action="/alert_created" method="post">
+                    <input class="email" type="email" name="email" id="email" required placeholder="email">
+                    <input type="hidden" name="movie_data" value=" {{ movie_data }}">
+                    <input class="get-notified-button" type="submit" value="Get notified!">
+                </form>
+            </div>
             <div class="premier"> Πρεμιέρα: {{ movie_data['premier'] }} </div>
             <img class='poster' src="{{ movie_data['poster'] }}" alt="">
         </div>

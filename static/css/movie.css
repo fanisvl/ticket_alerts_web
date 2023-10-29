@@ -14,7 +14,7 @@ body {
 
 .trailer {
     width: 90vw;
-    height: 85vh;
+    height: 80vh;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.142);
 
@@ -27,8 +27,50 @@ body {
     background-color: rgba(0, 0, 0, 0.478);
     width: 90vw;
     margin-top: 15px;
-    padding: 15px;
+    padding: 30px;
 }
+
+.info-container-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.email {
+    background-color: black;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.142);
+    border-radius: 15px;
+    padding: 15px;
+    width: 30vw;
+    
+}
+.get-notified-button {
+    text-align: center;
+    display: flex;
+    background-image: linear-gradient(to right, #010f3d 0%, #3c1a84  51%, #171f45  100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    transition: 0.5s;
+
+    color: white;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+}
+
+.get-notified-button:hover {
+    border: 2px solid rgba(255, 255, 255, 0.142);
+    background-position: right center;
+    color: #fff;
+}
+ 
 
 .header {
     font-size: 64px;
