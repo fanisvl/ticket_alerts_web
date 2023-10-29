@@ -1,5 +1,5 @@
-from flask import Flask, render_template
-from database import get_upcoming, get_movie
+from flask import Flask, render_template, request, redirect, url_for, flash
+from database import get_upcoming, get_movie, post_alert
 
 app = Flask(__name__)
 
@@ -20,3 +20,10 @@ def movie_page(movie_id):
 @app.route("/api/upcoming")
 def upcoming():
     return get_upcoming()
+
+@app.route('/create_alert', methods=['POST'])
+def create_alert():
+    email = request.form.get('email')
+    movie_id = request.form.get('movie_id')
+    post_alert(email, movie_id)    
+    return render_template("alert_success", movie_id=movie_id, email=email)
