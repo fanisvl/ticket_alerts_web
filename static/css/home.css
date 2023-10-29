@@ -47,9 +47,15 @@ body {
 .poster {
     border-radius: 15px;
     width: min(190px, 10vw);
+    transition: box-shadow 0.2s ease;
+}
+
+.poster:hover {
+  box-shadow: 0 0 0 1px white;
 }
 
 a {
   text-decoration: none;
   color: white;
 }
+

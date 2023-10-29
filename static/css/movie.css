@@ -2,7 +2,7 @@ body {
     font-family: "Ubuntu", Helvetica, Arial, sans-serif;
     background: rgb(42,75,170);
     background: linear-gradient(150deg, rgba(42,75,170,1) 0%, rgba(20,20,34,1) 25%);
-    height: 150vh;
+    height: 200vh;
     color: white;
 }
 
@@ -10,11 +10,6 @@ body {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-
-.header{
-    font-size: 64px;
 }
 
 .trailer {
@@ -23,10 +18,17 @@ body {
     border-radius: 15px;
 }
 
+.header{
+    font-size: 64px;
+}
+
+
 .premier {
     font-size: 22px;
 }
 
 .poster {
-    width: 100px;
+    margin-top: 30px;
+    border-radius: 15px;
+    width: min(400px, 15vw);
 }
