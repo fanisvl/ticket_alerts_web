@@ -13,7 +13,7 @@
         <iframe class='trailer' src="{{movie_data['trailer']}}" frameborder="0" modestbranding></iframe>
         <div class="info-container">
             <div class="header"> {{ movie_data['title'].title()}}</div>
-            <form action="/process_form" method="post">
+            <form action="/alert_created" method="post">
                 <label for="email">Email: </label>
                 <input type="email" name="email" id="email" required>
                 <input type="hidden" name="movie_data" value=" {{ movie_data }}">
