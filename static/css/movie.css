@@ -1,7 +1,7 @@
 body {
     font-family: "Ubuntu", Helvetica, Arial, sans-serif;
     background: rgb(42,75,170);
-    background: linear-gradient(150deg, rgba(42,75,170,1) 0%, rgba(20,20,34,1) 25%);
+    background: linear-gradient(150deg, rgb(19, 34, 79) 0%, rgba(20,20,34,1) 25%);
     height: 200vh;
     color: white;
 }
@@ -16,19 +16,21 @@ body {
     width: 90vw;
     height: 85vh;
     border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.142);
+
 }
 
 .info-container {
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.142);
     border-radius: 15px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.478);
     width: 90vw;
     margin-top: 15px;
     padding: 15px;
 }
 
-.header{
+.header {
     font-size: 64px;
 }
 
