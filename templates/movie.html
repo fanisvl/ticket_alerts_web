@@ -16,7 +16,7 @@
             <form action="/process_form" method="post">
                 <label for="email">Email: </label>
                 <input type="email" name="email" id="email" required>
-                <input type="hidden" name="movie_id" value=" {{ movie_data['id']}}">
+                <input type="hidden" name="movie_data" value=" {{ movie_data }}">
                 <input type="submit" value="Submit">
             </form>
             <div class="premier"> Πρεμιέρα: {{ movie_data['premier'] }} </div>
