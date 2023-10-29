@@ -45,13 +45,17 @@ body {
 }
 
 .poster {
-    border-radius: 15px;
     width: min(190px, 10vw);
+    border-bottom: 2px solid transparent;
+    border-radius: 15px;
     transition: box-shadow 0.2s ease;
+    transition: transform 0.1s ease;
+
 }
 
 .poster:hover {
-  box-shadow: 0 0 0 1px white;
+  box-shadow: 0 0 0 2px white;
+  transform: translateY(-2px);
 }
 
 a {
