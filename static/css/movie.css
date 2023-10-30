@@ -68,9 +68,28 @@ form {
 .get-notified-button:hover {
     border: 2px solid rgba(255, 255, 255, 0.142);
     background-position: right center;
-    color: #fff;
+}
+
+.tickets-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #010f3d 0%, #3c1a84  51%, #171f45  100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #eee;
+    transition: 0.5s;
 }
  
+
+.tickets-link:hover {
+    border: 2px solid rgba(255, 255, 255, 0.142);
+    background-position: right center;
+}
 
 .header {
     font-size: 64px;

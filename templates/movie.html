@@ -14,11 +14,18 @@
         <div class="info-container">
             <div class="info-container-top">
                 <div class="header"> {{ movie_data['title'].title()}}</div>
-                <form action="/alert_created" method="post">
-                    <input class="email" type="email" name="email" id="email" required placeholder="email">
-                    <input type="hidden" name="movie_data" value=" {{ movie_data }}">
-                    <input class="get-notified-button" type="submit" value="Get notified!">
-                </form>
+                {% if movie_data['ticketsAvailable'] == 0 %}
+                    <form action="/alert_created" method="post">
+                        <input class="email" type="email" name="email" id="email" required placeholder="email">
+                        <input type="hidden" name="movie_data" value=" {{ movie_data }}">
+                        <input class="get-notified-button" type="submit" value="Get notified!">
+                    </form>
+
+                {% else %}
+                    
+                    <a  class="tickets-link" href="https://www.villagecinemas.gr/WebTicketing/"> Purchase tickets! </a>
+            
+                {% endif %}
             </div>
             <div class="premier"> Πρεμιέρα: {{ movie_data['premier'] }} </div>
             <img class='poster' src="{{ movie_data['poster'] }}" alt="">
