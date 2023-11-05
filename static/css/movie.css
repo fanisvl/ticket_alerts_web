@@ -54,6 +54,7 @@ form {
 .get-notified-button {
     text-align: center;
     display: flex;
+    font-weight: bold;;
     border-radius: 15px;
     background-image: linear-gradient(to right, #010f3d 0%, #3c1a84  51%, #171f45  100%);
     background-size: 200% auto;
@@ -65,9 +66,10 @@ form {
     width: 150px;
 }
 
+ 
+
 .get-notified-button:hover {
-    border: 2px solid rgba(255, 255, 255, 0.142);
-    background-position: right center;
+    background-position: right center; /* change the direction of the change here */
 }
 
 .tickets-link {
@@ -75,6 +77,8 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+    text-decoration: none;
     border-radius: 15px;
     background-image: linear-gradient(to right, #010f3d 0%, #3c1a84  51%, #171f45  100%);
     background-size: 200% auto;
@@ -88,7 +92,6 @@ form {
  
 
 .tickets-link:hover {
-    border: 2px solid rgba(255, 255, 255, 0.142);
     background-position: right center;
 }
 
@@ -98,12 +101,38 @@ form {
 
 .premier {
     font-size: 22px;
+    font-weight: bold;
 }
 
 .poster {
     margin-top: 30px;
     border-radius: 15px;
     width: min(400px, 15vw);
+}
+
+
+.info-container-bottom {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.genre {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.description {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 60%;
 }
 
 @media (max-width: 480px) {
@@ -127,19 +156,18 @@ form {
       font-size: 36px;
       text-align: center;
       margin-left:0px;
-  
     }
 
     .email {
-        max-height: 30px;
+        height: 10px;
     }
 
     .tickets-link {
-        max-height: 50px;
+        max-height: 40px;
     }
 
     .get-notified-button {
-        max-height: 50px;
+        max-height: 40px;
     }
   
     .premier {
@@ -150,7 +178,21 @@ form {
     }
   
     .poster {
-      width: 100%;
+      width: 90%;
     }  
+
+    .info-container-bottom {
+        flex-direction: column;
+    }
+
+    .summary {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .description {
+        max-width: 90%;
+    }
     
   }

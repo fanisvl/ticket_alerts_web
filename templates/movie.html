@@ -20,15 +20,19 @@
                         <input type="hidden" name="movie_data" value=" {{ movie_data }}">
                         <input class="get-notified-button" type="submit" value="Get notified!">
                     </form>
-
                 {% else %}
-                    
                     <a  class="tickets-link" href="https://www.villagecinemas.gr/WebTicketing/"> Purchase tickets! </a>
-            
                 {% endif %}
             </div>
-            <div class="premier"> Πρεμιέρα: {{ movie_data['premier'] }} </div>
-            <img class='poster' src="{{ movie_data['poster'] }}" alt="">
+
+            <div class="info-container-bottom">
+                <img class='poster' src="{{ movie_data['poster'] }}" alt="">
+                <div class="summary">
+                    <div class="premier"> Πρεμιέρα: {{ movie_data['premier'] }} </div>
+                    <div class="genre">{{ movie_data['genre'].title()}}</div>
+                    <div class="description"> {{ movie_data['description']}} </div>
+                </div>
+            </div>
         </div>
 
     </div>
