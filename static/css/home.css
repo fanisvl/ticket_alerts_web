@@ -40,8 +40,8 @@ body {
     padding: 15px;
     gap: 20px;
     height: fit-content;
-    min-width: 100px;
-    }
+    min-width: 150px;
+}
 
 .title {
   font-size: 18px;
@@ -92,6 +92,10 @@ a {
     grid-auto-rows: 250px;
     margin-left: 0px;
     padding: 0px;
+  }
+
+  .movie-card {
+    min-width: 100px;
   }
 
   .poster {

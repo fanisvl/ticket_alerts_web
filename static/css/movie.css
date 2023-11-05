@@ -54,11 +54,11 @@ form {
 .get-notified-button {
     text-align: center;
     display: flex;
+    border-radius: 15px;
     background-image: linear-gradient(to right, #010f3d 0%, #3c1a84  51%, #171f45  100%);
     background-size: 200% auto;
     box-shadow: 0 0 20px #eee;
     transition: 0.5s;
-
     color: white;
     border-radius: 15px;
     height: 50px;
@@ -71,18 +71,19 @@ form {
 }
 
 .tickets-link {
-    text-decoration: none;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    height: 50px;
-    width: 150px;
     border-radius: 15px;
     background-image: linear-gradient(to right, #010f3d 0%, #3c1a84  51%, #171f45  100%);
     background-size: 200% auto;
     box-shadow: 0 0 20px #eee;
     transition: 0.5s;
+    color: white;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;   
 }
  
 
@@ -104,3 +105,52 @@ form {
     border-radius: 15px;
     width: min(400px, 15vw);
 }
+
+@media (max-width: 480px) {
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .trailer {
+        height: 25vh;
+    }
+
+    .info-container-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+  
+    .header { 
+      font-size: 36px;
+      text-align: center;
+      margin-left:0px;
+  
+    }
+
+    .email {
+        max-height: 30px;
+    }
+
+    .tickets-link {
+        max-height: 50px;
+    }
+
+    .get-notified-button {
+        max-height: 50px;
+    }
+  
+    .premier {
+      font-size: 16px;
+      text-align: center;
+      margin-left: 0px;
+      margin-top: 15px; 
+    }
+  
+    .poster {
+      width: 100%;
+    }  
+    
+  }
