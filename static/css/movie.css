@@ -2,7 +2,6 @@ body {
     font-family: "Ubuntu", Helvetica, Arial, sans-serif;
     background: rgb(42,75,170);
     background: linear-gradient(150deg, rgb(19, 34, 79) 0%, rgba(20,20,34,1) 25%);
-    height: 200vh;
     color: white;
 }
 
@@ -145,6 +144,7 @@ form {
       align-items: center;
       margin: 0;
       padding: 0;
+      margin-bottom: 15px;
     }
 
     .container {
