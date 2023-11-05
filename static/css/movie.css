@@ -147,6 +147,13 @@ form {
 
     .trailer {
         height: 25vh;
+        width: 99vw;
+    }
+
+    .info-container {
+        width: 95vw;
+        margin: auto;
+        margin-top: 10px;
     }
 
     .info-container-top {
@@ -184,14 +191,18 @@ form {
 
     .info-container-bottom {
         flex-direction: column;
+        text-align: center;
     }
 
     .summary {
         justify-content: center;
     }
 
+
     .description {
         max-width: 90%;
+        text-align: left;
+        margin-left: 10%;
     }
     
   }
