@@ -96,7 +96,7 @@ form {
 }
 
 .header {
-    font-size: 64px;
+    font-size: 4vw;
 }
 
 .premier {
@@ -115,6 +115,8 @@ form {
     display: flex;
     gap: 30px;
     align-items: center;
+    justify-content: center;
+    padding: 15px;
 }
 
 .summary {
@@ -172,7 +174,6 @@ form {
   
     .premier {
       font-size: 16px;
-      text-align: center;
       margin-left: 0px;
       margin-top: 15px; 
     }
@@ -187,8 +188,6 @@ form {
 
     .summary {
         justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 
     .description {
