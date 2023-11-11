@@ -35,6 +35,11 @@ body {
     justify-content: space-between;
 }
 
+.header {
+    font-size: 3.5vw;
+    max-width: 60%;
+}
+
 form {
     display: flex;
     align-items: center;
@@ -94,9 +99,7 @@ form {
     background-position: right center;
 }
 
-.header {
-    font-size: 4vw;
-}
+
 
 .premier {
     font-size: 20px;
