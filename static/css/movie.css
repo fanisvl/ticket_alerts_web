@@ -178,6 +178,7 @@ form {
   
     .header { 
       font-size: 36px;
+      min-width: 90%;
       text-align: center;
       margin-left:0px;
     }
@@ -201,6 +202,7 @@ form {
 
     .info-container-bottom {
         flex-direction: column;
+        align-items: center;
     }
   
     .poster {
