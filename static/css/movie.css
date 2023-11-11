@@ -99,7 +99,7 @@ form {
 }
 
 .premier {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -124,7 +124,7 @@ form {
 
 .genre {
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     border: 1px solid white;
     border-radius: 30px;
     width: fit-content;
@@ -191,28 +191,25 @@ form {
   
     .premier {
       font-size: 16px;
-      margin-left: 0px;
       margin-top: 15px; 
+    }
+
+    .info-container-bottom {
+        flex-direction: column;
     }
   
     .poster {
       width: 90%;
     }  
 
-    .info-container-bottom {
-        flex-direction: column;
-        text-align: center;
+    .genre {
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    .summary {
-        justify-content: center;
-    }
-
 
     .description {
         max-width: 90%;
         text-align: left;
-        margin-left: 10%;
     }
     
   }
