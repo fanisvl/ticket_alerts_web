@@ -26,5 +26,5 @@ def upcoming():
 def create_alert():
     email = request.form.get('email')
     movie_data = json.loads(request.form.get('movie_data').replace("'", '"')) # replace sigle quotes with double quotes for valid json
-    post_alert(email, movie_data['id'])
+    post_alert(email, movie_data['title'])
     return render_template("alert_created.html", movie_data=movie_data, email=email)

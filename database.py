@@ -22,8 +22,8 @@ def get_movie(id):
         cursor.execute(f"SELECT * FROM upcoming_movies WHERE id={id}")
         return cursor.fetchone()
 
-def post_alert(email, id):
+def post_alert(email, movie_title):
     with get_db_connection() as db, db.cursor(buffered=True, dictionary=True) as cursor:
-        insert_query =  "INSERT INTO alerts (email, movie_id) VALUES (%s, %s)"
-        cursor.execute(insert_query, (email, id))
+        insert_query =  "INSERT INTO alerts (email, movie_title) VALUES (%s, %s)"
+        cursor.execute(insert_query, (email, movie_title))
         db.commit()
