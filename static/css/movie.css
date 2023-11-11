@@ -108,18 +108,19 @@ form {
 
 .poster {
     border-radius: 15px;
-    width: min(400px, 15vw);
+    width: min(400px, 30vw);
 }
 
 
 .info-container-bottom {
     display: flex;
+    align-items: flex-start;
     gap: 30px;
     padding: 15px;
     margin-top: 30px;
 }
 
-.summary {
+.bottom-right-info {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -138,7 +139,7 @@ form {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 60%;
+    min-width: 90%;
 }
 
 @media (max-width: 480px) {

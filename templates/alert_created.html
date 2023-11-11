@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/alert_created.css') }}">
     <title>Alert created!</title>
 </head>
 <body>
-    <div class="title">Success! Your alert has been created</div>
-    <div class="subtitle">You will be notified when tickets are available for {{movie_data['title'].title()}}! </div>
+    <div class="container">
+        <div class="title">Success! Your alert has been created.</div>
+        <div class="subtitle">You will be notified when tickets are available for {{movie_data['title'].title()}}! </div>
+        <img src="{{ movie_data['poster'] }}" alt="Poster" class="poster">
+        <a href="./" class="back">Back to home</a>
+    </div>
 </body>
 </html>
