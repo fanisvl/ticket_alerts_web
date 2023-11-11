@@ -125,7 +125,7 @@ form {
 .genre {
     font-weight: bold;
     font-size: 20px;
-    border: 1px solid white;
+    border: 1px solid rgb(112, 112, 112);
     border-radius: 30px;
     width: fit-content;
     padding: 10px;
