@@ -3,20 +3,20 @@ body {
     background: rgb(42,75,170);
     background: linear-gradient(150deg, rgb(19, 34, 79) 0%, rgba(20,20,34,1) 25%);
     color: white;
+    padding: 0px;
+    margin: 0px;
 }
 
 .container {
-    padding: 15px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .trailer {
-    width: 90vw;
-    height: 80vh;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.142);
-
+    width: 100vw;
+    height: 85vh;
+    border-radius: 15px 0px;
 }
 
 .info-container {
@@ -52,28 +52,29 @@ form {
     border: 2px solid rgba(255, 255, 255, 0.142);
     border-radius: 15px;
     padding: 15px;
-    width: 30vw;
+    width: 25vw;
     
 }
 .get-notified-button {
-    text-align: center;
     display: flex;
+    justify-content: center;
+    text-align: center;
     font-weight: bold;;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border: 0px;
     border-radius: 15px;
     background-image: linear-gradient(to right, #010f3d 0%, #3c1a84  51%, #171f45  100%);
     background-size: 200% auto;
     box-shadow: 0 0 20px #eee;
-    transition: 0.5s;
-    color: white;
-    border-radius: 15px;
-    height: 50px;
-    width: 150px;
+    transition: 0.4s;
 }
 
  
 
 .get-notified-button:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center;
 }
 
 .tickets-link {
@@ -116,7 +117,6 @@ form {
     display: flex;
     align-items: flex-start;
     gap: 30px;
-    padding: 15px;
     margin-top: 30px;
 }
 
@@ -127,7 +127,6 @@ form {
 }
 
 .genre {
-    font-weight: bold;
     font-size: 20px;
     border: 1px solid rgb(112, 112, 112);
     border-radius: 30px;
@@ -220,7 +219,7 @@ form {
     }
     
   }
-
+/* 
   @media (orientation: landscape) {
 
 
@@ -233,15 +232,5 @@ form {
         margin-bottom: 15px;
       }
   
-      .container {
-          padding: 0px;
-      }
 
-    .trailer {
-        height: 100vh;
-        width: 100vw;
-        border-radius: 0px;
-        border: 0px;
-    }
-
-}
+} */
