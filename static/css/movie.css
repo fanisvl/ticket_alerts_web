@@ -5,6 +5,7 @@ body {
     color: white;
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 .container {
@@ -14,7 +15,7 @@ body {
 }
 
 .trailer {
-    width: 100vw;
+    width: 100%;
     height: 85vh;
     border-radius: 15px 0px;
 }
