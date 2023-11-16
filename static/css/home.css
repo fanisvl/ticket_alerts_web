@@ -3,6 +3,7 @@ body {
     color: white;
     background: rgb(42,75,170);
     background: linear-gradient(150deg, rgba(42,75,170,1) 0%, rgba(20,20,34,1) 25%);
+    min-height: 100vh;
     }
 
   .header {
