@@ -14,7 +14,7 @@ def get_db_connection():
 
 def get_upcoming():
     with get_db_connection() as db, db.cursor(buffered=True, dictionary=True) as cursor:
-        cursor.execute("SELECT * FROM upcoming_movies")
+        cursor.execute("SELECT * FROM upcoming_movies ORDER BY ticketsAvailable")
         return cursor.fetchall()
 
 def get_movie(id):
