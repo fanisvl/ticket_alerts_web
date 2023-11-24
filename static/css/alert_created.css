@@ -23,7 +23,7 @@ body {
 }
 
 .title {
-    font-size: 64px;
+    font-size: 55px;
     animation: 1s ease-out 0s 1 fade-in;
 }
 
@@ -35,11 +35,10 @@ body {
 
 .poster {
     height: auto;
-    padding: 30px 0px;
-    border-radius: 30px;
     width: 20vw;
+    margin: 30px 0px;
     animation: 1s ease-out 0s 1 fade-in;
-
+    border-radius: 20px;
 }
 
 .back {
