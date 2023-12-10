@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from database import get_upcoming, get_movie, post_alert
+from flask import jsonify
 import json
 
 app = Flask(__name__)
@@ -19,8 +20,9 @@ def movie_page(movie_id):
         return "404: Movie not found"
 
 @app.route("/api/upcoming")
-def upcoming():
-    return get_upcoming()
+def upcoming_api():
+    upcoming_movies = get_upcoming()
+    return jsonify(movies=upcoming_movies)  
 
 @app.route('/alert_created', methods=['POST'])
 def create_alert():
